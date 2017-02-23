@@ -1,0 +1,77 @@
+<!DOCTYPE HTML />
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IBM - Fedexercise</title>
+    <!-- Stylesheets imported -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">IBM - Fedexercise</a>
+        </div>
+        <div id="display_page_load_time"></div>
+      </div>
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12">
+
+          <div class="jumbotron">
+            <h1>Flicker Web-app</h1>
+            <p>Fetching images from Nasa's account via the Flickr API and displaying with responsive layout for multi devices.</p>
+          </div>
+			<!-- User Filter Section starts here -->
+          <div class="dropdown1">
+			<fieldset>
+				<legend>User Filters:</legend>
+			  	<form class="search_form" action="" method="post">
+			  		<div class="selectbox">
+			  		<select id="dropdown">
+					  	<option value="0">Sort By:</option>
+					  	<option class="sort-title" value = "photo-title">Photo Title</option>
+					  	<option  class="sort-posted" value = "posted-date">Posted Date</option>
+					  	<option  class="sort-lastupdate" value="last-update">Last Update</option>
+			  		</select>
+					</div>
+					<div class="searchbox">
+				   		<input id="keywords" type="text" /> 
+				   		<button id="search" name="search">Search</button>
+				   	</div>
+				   <div class="error-label"><label>Note: Search results may includes the tag names specific to photo. </label></div>	
+   			  	</form>
+   			</fieldset>		
+			</div>
+			<!-- User Filter Section ends here -->
+			 <hr>
+			<!-- Photo Container starts here -->
+          <div class="row photoContainer">
+            <!--/ col-xs-max-12 col-xs-6 col-sm-4 col-md-4 col-lg-3 -->
+          </div>
+          <!-- Photo Container ends here -->
+
+        </div><!--/.col-xs-12-->   
+      </div><!--/row-->
+      <hr>
+      <!-- Footer Section starts here -->
+      <footer>
+        <p>&copy; 2017 Sai Krishna  </p>
+      </footer>
+	  <!-- Footer Section ends here -->
+    </div><!--/.container-->
+
+	<!-- Including all the javascripts -->
+ 	<script src="bootstrap/js/jquery-2.1.4.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/scripts.js"></script>
+	<script src="bootstrap/js/page-load.js"></script>
+ </body>
+</html>
